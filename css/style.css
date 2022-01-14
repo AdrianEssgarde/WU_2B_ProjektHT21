@@ -1,0 +1,327 @@
+* {
+
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper_index{
+display: grid;
+width: 100vw;
+height: 100vh;
+
+grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 3fr) minmax(300px, 3fr) minmax(100px, 1fr) minmax(100px, 1fr);
+grid-template-rows: minmax(100px, 1fr) minmax(400px, 3fr) minmax(400px, 3fr);
+
+grid-template-areas: 
+"log nav nav nav nav nav"
+"pi1 pi1 se1 pi3 pi2 pi2"
+"pi1 pi1 pi4 se2 pi2 pi2"
+;
+
+}
+
+.flex_logo {
+
+    grid-area: log;
+    display: flex;
+    background-image: url(../img/Logo_with_justeringslager.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+.nav {
+
+    grid-area: nav;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_links {
+    display: flex;
+    list-style: none;
+    width: 1000px;
+    justify-content: space-evenly;  
+    align-items: center;
+    font-size: 1.9rem;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.section1 {
+
+    grid-area: se1;
+}
+
+
+.section2 {
+
+    grid-area: se2;
+}
+
+
+.flex_pic2 {
+
+    grid-area: pi2;
+    display: flex;
+    background-image: url(../img/resturant_inside3.jpg)
+    
+   
+}
+
+.flex_section1 {
+
+    grid-area: se1;
+    display: flex;
+    background-image: url(../img/wall.jpg);
+
+}
+
+
+
+.flex_section2 {
+
+    grid-area: se2;
+    display: flex;
+    background-image: url(../img/wall.jpg);
+
+}
+
+
+
+.flex_pic3 {
+
+    grid-area: pi3;
+    background-image: url(../img/resturant_outside_cut_final.jpg)
+    
+}
+
+.flex_pic1 {
+
+    grid-area: pi1;
+    display: flex;
+    background-image: url(../img/resturant_inside3.jpg);    
+   
+}
+
+
+.flex_pic4 {
+
+    grid-area: pi4;
+    background-image: url(../img/kitchen_staff_small.jpg)
+
+}
+    
+
+.paragraph_text {
+
+    margin: 1.9rem;
+    color: black;
+    line-height: 1.6rem;
+    word-spacing: 0rem;
+    letter-spacing: 0.02rem;
+    font-family: 'Khand', sans-serif;
+    font-size: 0.8125rem;
+
+
+}
+
+.paragraph_title {
+
+    margin: 1.9rem;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.wrapper_meny {
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(800px, 6fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: minmax(100px, 1fr) minmax(600px, 6fr);
+
+    grid-template-areas:
+    "log nav nav nav nav"
+    "mp1 mp1 men mp2 mp2"
+
+    ;
+}
+
+
+.flex_meny_pic1 {
+
+    grid-area: mp1;
+    background-image: url(../img/resturant_inside3.jpg);
+}
+
+
+.flex_meny_pic2 {
+
+    grid-area: mp2;
+    background-image: url(../img/resturant_inside3.jpg);
+}
+
+.flex_meny {
+    grid-area: men;
+    background-image: url(../img/frame.jpg);
+}
+
+
+
+.meny_main_title {
+
+    font-size: 2.2rem;
+    margin-top: 14rem;
+    margin-left: 18rem;
+}
+
+.meny_title {
+
+    text-indent: 20rem;
+    font-size: 1.5rem;
+
+}
+
+.meny_text {
+
+    text-indent: 20rem;
+    font-size: 1rem;
+    
+}
+
+ul {
+
+    list-style-type: none;
+
+}
+
+
+.meny_list {
+
+    margin: 4rem 0;
+}
+
+
+
+
+
+
+
+.wrapper_find_us {
+
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(800px, 6fr) minmax(100px, 1fr) minmax(100px, 1fr);
+    grid-template-rows: minmax(100px, 1fr) minmax(800px, 6fr);
+
+    grid-template-areas:
+    "log nav nav nav nav"
+    "fp1 fp1 fus fp2 fp2"
+
+    ;
+}
+
+
+.flex_find_us {
+
+    grid-area: fus;
+    background-image: url(../img/wall.jpg);
+    
+}
+
+.flex_find_us_pic1 {
+
+    grid-area: fp1;
+    background-image: url(../img/resturant_inside3.jpg);
+
+}
+
+
+.flex_find_us_pic2 {
+    grid-area: fp2;
+    background-image: url(../img/resturant_inside3.jpg);
+
+    
+}
+
+.find_us_main_title {
+    font-size: 2.125rem;
+    margin-top: 13rem;
+    margin-left: 24rem;
+
+}
+
+.find_us_title {
+    font-size: 1.3125rem;
+
+}
+
+
+.find_us_list_street {
+
+    margin: 0rem 18rem;
+    margin-top: 5rem;
+    margin-left: 28rem;
+
+}
+
+
+.find_us_list_city {
+
+    margin: 0rem 18rem;
+    margin-top: 5rem;
+    margin-left: 20rem; 
+}
+
+
+.find_us_list_number {
+
+    margin: 0rem 18rem;
+    margin-top: 5rem;
+    margin-left: 28rem; 
+
+}
+
+
+
+.find_us {
+    font-family: 'Architects Daughter', cursive;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
